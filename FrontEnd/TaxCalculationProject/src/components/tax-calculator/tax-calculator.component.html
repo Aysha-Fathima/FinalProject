@@ -1,0 +1,73 @@
+<div>
+    <h2>Income Tax Assessment</h2>
+    <form #formsdata="ngForm" (ngSubmit)="submitAssessmentForm(formsdata)">
+      <mat-form-field appearance="fill">
+        <mat-label>Assessment Year</mat-label>
+        <input matInput type="number" id="assessmentYear" ngModel name="assessmentYear" [value]="obj.userTaxData.assessmentYear || ''">
+      </mat-form-field>
+      <br />
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Income from Salary</mat-label>
+        <input matInput type="number" id="incomeSalary" ngModel name="incomeSalary" [value]="obj.userTaxData.incomeSalary || ''">
+      </mat-form-field>
+      <br />
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Income from Property</mat-label>
+        <input matInput type="number" id="incomeFromProperty" ngModel name="incomeFromProperty" [value]="obj.userTaxData.incomeFromProperty || ''">
+      </mat-form-field>
+      <br />
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Municipal Tax Paid</mat-label>
+        <input matInput type="number" id="municipalTaxPaid" ngModel name="municipalTaxPaid" [value]="obj.userTaxData.municipalTaxPaid || ''">
+      </mat-form-field>
+      <br />
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Short Term Capital Gains</mat-label>
+        <input matInput type="number" id="shortTermCapitalGains" ngModel name="shortTermCapitalGains" [value]="obj.userTaxData.shortTermCapitalGains || ''">
+      </mat-form-field>
+      <br />
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Long Term Capital Gains</mat-label>
+        <input matInput type="number" id="longTermCapitalGains" ngModel name="longTermCapitalGains" [value]="obj.userTaxData.longTermCapitalGains || ''">
+      </mat-form-field>
+      <br />
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Other Bank Interest</mat-label>
+        <input matInput type="number" id="OtherBankInterest" ngModel name="OtherBankInterest" [value]="obj.userTaxData.otherBankInterest || ''">
+      </mat-form-field>
+      <br />
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Other Win/Lottery</mat-label>
+        <input matInput type="number" id="OtherWinLottery" ngModel name="OtherWinLottery" [value]="obj.userTaxData.otherWinLottery || ''">
+      </mat-form-field>
+      <br />
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Total Deduction</mat-label>
+        <input matInput type="number" id="totalDeduction" ngModel name="totalDeduction" [value]="obj.userTaxData.totalDeduction || ''">
+      </mat-form-field>
+      <br />
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Advance Tax Paid</mat-label>
+        <input matInput type="number" id="advanceTaxPaid" ngModel name="advanceTaxPaid" [value]="obj.userTaxData.advanceTaxPaid || ''">
+      </mat-form-field>
+      <br />
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Gross Total Income (auto-calculated)</mat-label>
+        <input matInput type="number" id="grossTotalIncome" ngModel name="grossTotalIncome" [value]="obj.userTaxData.grossTotalIncome || ''" readonly>
+      </mat-form-field>
+      <br />
+  
+      <button mat-raised-button type="submit" color="primary">Submit</button>
+    </form>
+  </div>
+  
